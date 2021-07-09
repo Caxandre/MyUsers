@@ -13,7 +13,7 @@ The following steps will help install and run MyUsers on your local computer.
 3. Start the development server with **_npm dev_** or **_yarn dev_**.
 ## Tests
 
-To run the tests use the command npm run test or yarn test.
+To run the tests use the command **_npm run test_** or **_yarn test_**.
 
 ## Endpoints
 #### POST /users

@@ -10,7 +10,7 @@ class UsersController {
   async create(request: Request, response: Response): Promise<Response> {
     const { name, email, pictureUrl } = request.body;
 
-    const userExits = await usersRepository.findByEmail(email);
+    // const userExits = await usersRepository.findByEmail(email);
 
     // if (userExits) {
     //   throw new AppError('E-mail already exists');

@@ -54,7 +54,7 @@ Returns an object
 | id | string | User id registered in the system |
 | name | string | User name |
 | email | string | User email |
-| pictureUrl | string | Indicates whether the user's registration
+| pictureUrl | string |Image url |
 | created_at | date | User registration creation date |
 
 #### GET /users
@@ -134,7 +134,7 @@ Returns an object
 | id | string | User id registered in the system |
 | name | string | User name |
 | email | string | User email |
-| pictureUrl | string | Image url
+| pictureUrl | string | Image url |
 | created_at | date | User registration creation date |
 
 #### PUT /users

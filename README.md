@@ -1,10 +1,10 @@
 ## About the project
 
-Simple API to register, list, edit and remove users. Built with NodeJS and Typescript
+Simple API to register, list, edit and remove users. Built with NodeJS and Typescript.
 
 ## Installation
 
-The following steps will help install and run importServiceAPi on your local computer. Make sure database instances are active:
+The following steps will help install and run MyUsers on your local computer.
 
 1. git clone https://github.com/Caxandre/MyUsers.git;
 
@@ -13,23 +13,20 @@ The following steps will help install and run importServiceAPi on your local com
 3. Start the development server with **_npm dev_** or **_yarn dev_**.
 ## Tests
 
-To run the tests use the command npm run test or yarn test
+To run the tests use the command npm run test or yarn test.
 
 ## Endpoints
-
-
 #### POST /users
 
-Create a new user:
-
+Create a new user.
 ##### Request
 ```json
 Body
 
 {
-	"name": "New User",
-	"email": "newuser@email.com",
-	"pictureUrl": "https://image.shutterstock.com/image-photo/closeup-photo-amazing-short-hairdo-600w-1617540484.jpg"
+  "name": "New User",
+  "email": "newuser@email.com",
+  "pictureUrl": "https://image.shutterstock.com/image-photo/closeup-photo-amazing-short-hairdo-600w-1617540484.jpg"
 }
 ```
 
@@ -62,7 +59,7 @@ Returns an object
 
 #### GET /users
 
-List all registered users. Allows search by username
+List all registered users. Allows search by username.
 
 ##### Request
 
@@ -151,9 +148,9 @@ Update an existing user.
 Body:
 
 {
-	"name": "Update New User",
-	"email": "updatenewuser@email.com",
-	"pictureUrl": "https://image.shutterstock.com/image-photo/closeup-photo-amazing-short-hairdo-600w-1617540484.jpg"
+  "name": "Update New User",
+  "email": "updatenewuser@email.com",
+  "pictureUrl": "https://image.shutterstock.com/image-photo/closeup-photo-amazing-short-hairdo-600w-1617540484.jpg"
 }
 ```
 

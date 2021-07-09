@@ -1,4 +1,4 @@
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 
 import User from '../models/User';
 
@@ -63,7 +63,7 @@ class UsersRepository {
     const user = new User();
 
     const data = {
-      id: uuid(),
+      id: uuidv4(),
       name,
       email,
       pictureUrl,

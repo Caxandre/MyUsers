@@ -1,6 +1,5 @@
 import { Router } from 'express';
 
-// import ImportService from '../services/ImportService';
 import UsersController from '../controllers/UsersController';
 
 const usersController = new UsersController();

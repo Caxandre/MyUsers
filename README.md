@@ -1,10 +1,9 @@
 ## About the project
-***
+
 Simple API to register, list, edit and remove users. Built with NodeJS and Typescript
-<br/><br/>
 
 ## Installation
-***
+
 The following steps will help install and run importServiceAPi on your local computer. Make sure database instances are active:
 
 1. git clone https://github.com/Caxandre/MyUsers.git;
@@ -12,16 +11,12 @@ The following steps will help install and run importServiceAPi on your local com
 2. Go to the MyUsers folder and install all project dependencies with **_npm install_** or **_yarn install_**;
 
 3. Start the development server with **_npm dev_** or **_yarn dev_**.
-<br/><br/>
-
 ## Tests
-***
+
 To run the tests use the command npm run test or yarn test
-<br/><br/>
 
 ## Endpoints
-***
-<br/>
+
 
 #### POST /users
 
@@ -44,8 +39,6 @@ Body
 | email | string | Email of the user to be registered
 | pictureUrl | string | Image url
 
-<br/>
-
 ##### Response - 200
 ```json
 Returns an object
@@ -67,28 +60,21 @@ Returns an object
 | pictureUrl | string | Indicates whether the user's registration
 | created_at | date | User registration creation date |
 
-<br/>
-
 #### GET /users
 
 List all registered users. Allows search by username
-
-<br/>
 
 ##### Request
 
 ```json
 /users?page=2&per_page=2&name=maria
 ```
-<br/>
 
 | Query Param | Type | Description | Send |
 | ---- |------| ----------- | ------|
 | :page | number | Current page number | Optional |
 | :per_page | number | Items per page | Optional |
 | :name | string | User name search | Optional |
-
-<br/>
 
 ##### Response - 200
 
@@ -124,21 +110,15 @@ Returns data for paging and array containing registered users
 | total_pages | number | Total number of pages |
 | users | array | Array containing registered users |
 
-<br/>
-
 #### GET /users/:id
 
 Show user details.
-
-<br/>
 
 ##### Request
 
 ```json
 /users/ff278c58-c59a-4acd-a8d3-b068376db6b0
 ```
-<br/>
-
 ##### Response - 200
 ```json
 Returns an object
@@ -160,12 +140,9 @@ Returns an object
 | pictureUrl | string | Image url
 | created_at | date | User registration creation date |
 
-<br/>
-
 #### PUT /users
 
 Update an existing user.
-
 ##### Request
 
 ```json
@@ -186,8 +163,6 @@ Body:
 | email | string | Email of the user to be registered | Optional |
 | pictureUrl | string | Image url | Optional |
 
-<br/>
-
 ##### Response - 200
 ```json
 Returns an object
@@ -209,22 +184,17 @@ Returns an object
 | pictureUrl | string | Image url
 | created_at | date | User registration creation date |
 
-<br/>
 
 #### DELETE /users/:id
 
 Remove an existing user from the application.
-
-<br/>
 
 ##### Request
 
 ```json
 /users/ff278c58-c59a-4acd-a8d3-b068376db6b0
 ```
-<br/>
 
 ## Contact
-***
 
 Carlos Perrout - carlosperrout@gmail.com.br
